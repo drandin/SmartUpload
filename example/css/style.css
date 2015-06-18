@@ -1,0 +1,54 @@
+.file-input-button {
+    position: relative;
+    overflow: hidden;
+}
+
+.file-input-button input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    opacity: 0;
+    -ms-filter: 'alpha(opacity=0)';
+    font-size: 200px;
+    direction: ltr;
+    cursor: pointer;
+}
+
+.table-upload {
+    width: 100%;
+}
+
+.td-button {
+    width: 200px;
+}
+
+.td-progressbar {
+    vertical-align: middle;
+    height: 45px;
+}
+
+.progress-custom {
+    position: relative;
+    top: 10px;
+    display: none;
+}
+
+.uploadInfo {
+    color: red;
+}
+
+.attachedFiles {
+    padding-top: 17px;
+}
+
+.thumbnailImg {
+    max-width:128px;
+    text-align:center;
+    padding: 3px 0 17px 0;
+}
+
+.thumbnailMin {
+    min-width: 110px;
+}
+
