@@ -40,16 +40,13 @@ class FileCollection implements \Iterator
         return $this;
     }
 
-    /**
-     * Перемотка в начало
-     */
+
     public function rewind()
     {
         reset($this->items);
     }
 
     /**
-     * Текущее значение
      * @return mixed
      */
     public function current()
@@ -58,7 +55,6 @@ class FileCollection implements \Iterator
     }
 
     /**
-     * Возвращает ключ элемента
      * @return mixed
      */
     public function key()
