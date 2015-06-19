@@ -28,7 +28,7 @@ HTML form:
                 <td class="td-button">
                 <span class="btn btn-success file-input-button">
                 <i class="glyphicon glyphicon-plus"></i>
-                <span>Прикрепить файлы...</span>
+                <span>To attach files...</span>
                 <input id="files" type="file" multiple="true">
                 </span>
                 </td>
