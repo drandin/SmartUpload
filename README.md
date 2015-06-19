@@ -280,5 +280,46 @@ return [
 ];
 ```
 
+```sql
+
+--
+-- the scheme of the tables `fileStorage` and `fileStorageDetails`
+--
+
+CREATE TABLE IF NOT EXISTS `fileStorage` (
+`idFile` int(11) NOT NULL,
+  `codeSubject` int(11) NOT NULL DEFAULT '0',
+  `essence` varchar(32) NOT NULL,
+  `idDetails` int(11) NOT NULL DEFAULT '1',
+  `dirStorage` varchar(255) NOT NULL,
+  `vendor` varchar(30) NOT NULL,
+  `prefixUser` varchar(100) NOT NULL,
+  `idUser` int(11) NOT NULL,
+  `year` year(4) NOT NULL,
+  `month` tinyint(4) NOT NULL DEFAULT '0',
+  `filename` varchar(100) NOT NULL,
+  `dirThumbnail` varchar(100) NOT NULL,
+  `thumbnail` tinyint(4) NOT NULL DEFAULT '0',
+  `size` bigint(11) NOT NULL,
+  `mimeType` varchar(255) NOT NULL,
+  `extension` varchar(5) NOT NULL,
+  `filenameOriginal` varchar(255) NOT NULL,
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE IF NOT EXISTS `fileStorageDetails` (
+`idDetails` int(11) NOT NULL,
+  `idGroup` smallint(6) NOT NULL,
+  `description` varchar(150) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+
+INSERT INTO `fileStorageDetails` (`idDetails`, `idGroup`, `description`) VALUES
+(1, 1, 'Other files');
+
+```
+
+
 
 
