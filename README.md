@@ -330,7 +330,7 @@ dirStorage / [vendor / ] prefixUser +  idUser / year / month / thumbnail /
 
 <h2>Author</h2>
 
-[Igor Drandin] https://github.com/drandin
+[Igor Drandin] (https://github.com/drandin)
 
 <h2>License</h2>
 
