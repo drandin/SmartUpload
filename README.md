@@ -143,7 +143,10 @@ if (filter_input(INPUT_SERVER, 'REQUEST_METHOD') === 'POST') {
         $handlerFileUpload = new SmartUpload\HandlerFileUpload();
 
         $routingFiles = new \SmartUpload\RoutingFiles(
-            new \SmartUpload\FileMapper($cfg['tables'], \SmartUpload\DB\DB::getPDO($cfg['db']))
+            new \SmartUpload\FileMapper(
+                $cfg['tables'], 
+                \SmartUpload\DB\DB::getPDO($cfg['db'])
+            )
         );
 
         $resizeImage = new \SmartUpload\ResizeImage();
@@ -189,7 +192,10 @@ if (filter_input(INPUT_SERVER, 'REQUEST_METHOD') === 'GET') {
 
     if ($codeSubject > 0 && $idUser > 0) {
 
-        $fileMapper =  new \SmartUpload\FileMapper($cfg['tables'], SmartUpload\DB\DB::getPDO($cfg['db']));
+        $fileMapper =  new \SmartUpload\FileMapper(
+            $cfg['tables'], 
+            SmartUpload\DB\DB::getPDO($cfg['db'])
+        );
 
         $searchCriteria = [
             'codeSubject' => $codeSubject,
@@ -214,7 +220,8 @@ if (filter_input(INPUT_SERVER, 'REQUEST_METHOD') === 'GET') {
     require __DIR__ . '/../Autoload.php';
 
     $routingFiles = new \SmartUpload\RoutingFiles(
-        new \SmartUpload\FileMapper($cfg['tables'], \SmartUpload\DB\DB::getPDO($cfg['db']))
+        new \SmartUpload\FileMapper($cfg['tables'], 
+        \SmartUpload\DB\DB::getPDO($cfg['db']))
     );
 
     $idFile = (int)filter_input(INPUT_GET, 'idFile');
