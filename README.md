@@ -322,13 +322,18 @@ INSERT INTO `fileStorageDetails` (`idDetails`, `idGroup`, `description`) VALUES
 
 All uploaded files are stored:
 
-dirStorage / 
-    [vendor / ] 
-        prefixUser +  idUser / 
-            year / 
-                month /
+dirStorage / [vendor / ]  prefixUser +  idUser / year /  month /
 
 All thumbnail images are stored: 
 
 dirStorage / [vendor / ] prefixUser +  idUser / year / month / thumbnail /
+
+<h2>Author</h2>
+
+[Igor Drandin] https://github.com/drandin
+
+<h2>License</h2>
+
+MIT Public License
+
 
