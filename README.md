@@ -15,4 +15,4 @@ http://drandin.ru/SmartUpload/example/
 6.	Storing information about the files in the database
 7.	Restricting access to files
 
-    <?php echo "";
+     <?php echo "";
