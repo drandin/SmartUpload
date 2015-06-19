@@ -280,11 +280,9 @@ return [
 ];
 ```
 
-```sql
+The scheme of the tables `fileStorage` and `fileStorageDetails`
 
---
--- the scheme of the tables `fileStorage` and `fileStorageDetails`
---
+```sql
 
 CREATE TABLE IF NOT EXISTS `fileStorage` (
 `idFile` int(11) NOT NULL,
@@ -320,6 +318,17 @@ INSERT INTO `fileStorageDetails` (`idDetails`, `idGroup`, `description`) VALUES
 
 ```
 
+<h3>The directory hierarchy<h3>
 
+All uploaded files are stored:
 
+dirStorage / 
+    [vendor / ] 
+        prefixUser +  idUser / 
+            year / 
+                month /
+
+All thumbnail images are stored: 
+
+dirStorage / [vendor / ] prefixUser +  idUser / year / month / thumbnail /
 
