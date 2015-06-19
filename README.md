@@ -318,7 +318,7 @@ INSERT INTO `fileStorageDetails` (`idDetails`, `idGroup`, `description`) VALUES
 
 ```
 
-<h3>The directory hierarchy<h3>
+<h3>The directory hierarchy</h3>
 
 All uploaded files are stored:
 
