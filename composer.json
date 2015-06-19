@@ -1,0 +1,21 @@
+{
+  "name": "drandin/SmartUpload",
+  "type": "library",
+  "description": "Upload files on server, create thumbnail of images",
+  "keywords": ["upload", "thumbnail", "Multiple file selection", "validation", "file"],
+  "homepage": "https://github.com/drandin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Igor Drandin",
+      "email": "idrandin@gmail.com",
+      "homepage": "https://github.com/drandin"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0"
+  },
+  "autoload": {
+    "psr-4": { "SmartUpload\\": "src/" }
+  }
+}

@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * @author      Igor Drandin <idrandin@gmail.com>
+ * @copyright   2015 Igor Drandin
+ */
+
 if (filter_input(INPUT_SERVER, 'REQUEST_METHOD') === 'GET') {
 
     $cfg = require __DIR__ . '/config.php';

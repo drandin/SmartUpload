@@ -1,8 +1,9 @@
 <?php
 
-ini_set('error_reporting', E_ALL);
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
+/**
+ * @author      Igor Drandin <idrandin@gmail.com>
+ * @copyright   2015 Igor Drandin
+ */
 
 $cfg = require __DIR__.'/config.php';
 require __DIR__.'/../Autoload.php';
@@ -90,5 +91,4 @@ if (filter_input(INPUT_SERVER, 'REQUEST_METHOD') === 'GET') {
             require 'view/images.php';
         }
     }
-
 }

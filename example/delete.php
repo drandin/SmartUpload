@@ -14,5 +14,4 @@ if (filter_input(INPUT_SERVER, 'REQUEST_METHOD') === 'POST') {
     if (ctype_digit($idFile)) {
         echo json_encode(['result' => $routingFiles->deleteFile((int)$idFile)]);
     }
-
 }

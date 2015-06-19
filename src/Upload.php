@@ -1,4 +1,11 @@
-<?php namespace SmartUpload;
+<?php
+
+/**
+ * @author      Igor Drandin <idrandin@gmail.com>
+ * @copyright   2015 Igor Drandin
+ */
+
+namespace SmartUpload;
 
 use SmartUpload\Exception\ExceptionUploadInitialization;
 use SmartUpload\Exception\ExceptionRoutingFiles;
