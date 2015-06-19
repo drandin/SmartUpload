@@ -16,3 +16,5 @@ http://drandin.ru/SmartUpload/example/
 7.	Restricting access to files
 
      <?php echo "";
+     
+9
