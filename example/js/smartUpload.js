@@ -1,3 +1,7 @@
+/**
+ * @author Igor Drandin
+ * @copyright 2015 Igor Drandin
+ */
 ;(function() {
 
     /**
@@ -19,7 +23,6 @@
 
         if (errors.length > 0) {
             showMessage(errors, 'uploadArea');
-            return false;
         }
 
         /**
@@ -167,7 +170,7 @@
         };
 
         /**
-         * @param messages
+         * @param msg
          * @param id
          */
         function showMessage(msg, id) {
@@ -177,7 +180,6 @@
         }
 
         /**
-         * @param obj
          * @returns {boolean}
          */
         function checkIncomingData() {
@@ -200,14 +202,14 @@
                 }
             }
             return false;
-        };
+        }
 
         /**
          * @returns {boolean}
          */
         function checkBrowser() {
             return (!!window.FormData && !!window.FormData.prototype);
-        };
+        }
     }
 
     window.SmartUpload = SmartUpload;
