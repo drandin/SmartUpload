@@ -22,6 +22,7 @@ http://drandin.ru/SmartUpload/example/
 Fragment of file index.html
 
 ```html
+<script src="../js/smartUpload.js"></script>
 <div id="uploadArea">
     <table class="table-upload">
         <tr>
