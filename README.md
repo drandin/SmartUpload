@@ -3,7 +3,7 @@ Upload files on server, сreate thumbnail of images, validating files
 
 <h2>Example</h2>
 
-http://drandin.ru/SmartUpload/example/
+http://examples.drandin.ru/projects/SmartUpload/example/
 
 <h2>Features</h2>
 
