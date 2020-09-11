@@ -1,10 +1,6 @@
 # SmartUpload
 Upload files on server, сreate thumbnail of images, validating files
 
-<h2>Example</h2>
-
-http://examples.drandin.ru/projects/SmartUpload/example/
-
 <h2>Features</h2>
 
 1.	Multiple file selection
