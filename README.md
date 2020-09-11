@@ -46,7 +46,8 @@ Fragment of file index.html
 ```
 JavaScript code:
 
-````javascript
+```javascript
+
     $(function() {
 
         var obj = {
